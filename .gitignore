@@ -1,0 +1,45 @@
+# Real environment variables; reviewed empty templates are allowed
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Machine-specific and temporary files
+/local/
+
+# Share only reviewed project configuration
+.codex/*
+!.codex/config.toml
+
+# Authentication and private keys
+auth.json
+.ssh/
+.aws/
+id_rsa
+id_ed25519
+*.key
+*.pem
+*.p12
+*.pfx
+.npmrc
+.pypirc
+credentials.json
+service-account*.json
+
+# Local sessions and state
+.codex-log/
+*.log
+
+# Dependencies and generated files
+node_modules/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+dist/
+build/
+coverage/
+
+# OS files
+.DS_Store
+Thumbs.db
